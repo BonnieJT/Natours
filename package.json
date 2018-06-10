@@ -1,19 +1,24 @@
 {
   "name": "natours",
   "version": "1.0.0",
-  "description": "Landing page for natours",
+  "description": "Landing page Natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css",
+    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
   },
   "repository": {
     "type": "git",
-    "url": "\u001b[1;5A\u001b[Bhttps://github.com/BonnieJT/Natours"
+    "url": "git+https://github.com/BonnieJT/Natours.git"
   },
-  "author": "BonnieJT",
+  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^4.5.3"
+  "bugs": {
+    "url": "https://github.com/BonnieJT/Natours/issues"
   },
-  "dependencies": {}
+  "homepage": "https://github.com/BonnieJT/Natours#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5"
+  }
 }
